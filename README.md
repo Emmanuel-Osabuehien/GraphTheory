@@ -62,12 +62,20 @@ While programming languages are composed of a syntax representing program as str
 
 So as I move on with my answer to this question, can all formal languages be encoded as a regular expression, to break it down easy and simply in layman's terms I will say that most formal languages can be encoded as a regular expression.
 
-This all ties in with the concept of a regular language, a regular language that can be defined by a regular expression
+This all ties in with the concept of a regular language, a regular language that can be defined by a regular expression.
+
+There are many reasons why most formal languages can use regular expressions while some can't, one of the reasons that not all formal languages can be encoded using regular expressions is as simple as not all languages support the same features which means for language such as the aforementioned PERl using this type of code is perfectly fine while in some other languages it may completely unreadable and impossible to debug.
+
+Some languages may use the same syntax for different features and even for the same features but they can also exhibit different behaviour which makes it hard to reuse the regular expressions across different formal languages.
+
+So long story short, technically no not all formal languages can be encoded as regular expressions for many reasons while there are a lot of languages that use regular expressio there is also many that don't for many reasons.
 
 For this question in general if you have more questions about it I suggest you read this document which I found very helpful in discussing this question:
 
-[*Why Aren't Regular Expressions a Lingua Franca?*, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://www.i-programmer.info/programming/perl/13051-can-regular-expressions-be-safely-reused-across-language-boundaries.html#google_vignette/](https://www.i-programmer.info/programming/perl/13051-can-regular-expressions-be-safely-reused-across-language-boundaries.html#google_vignette/)
+[*Why Aren't Regular Expressions a Lingua Franca?*, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf/](https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf/)
 
- ## References for my Project
+ ## References
 
  Here is a list of references that helped me with the research of my project:
+
+ 1. [*Why Aren't Regular Expressions a Lingua Franca?*, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf/](https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf/)
