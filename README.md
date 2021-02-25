@@ -3,9 +3,9 @@
 **Student ID:** G00373559
 **Module:** Graph Theory
 
-Q. What is a regular expression?
+## What is a regular expression?
 
-A. Before we get into what is a regular expession in python, the whole concept and development of a regular expression can be dated back to as early as the 1950's and maybe even in the 1940's but in 1951, the concept of regular language was created by a mathematician by the name of Stephen Cole Kleene, where we have a language that can be idenitfied by a finite automaton and represented using regular expression.
+ Before we get into what is a regular expession in python, the whole concept and development of a regular expression can be dated back to as early as the 1950's and maybe even in the 1940's but in 1951, the concept of regular language was created by a mathematician by the name of Stephen Cole Kleene, where we have a language that can be idenitfied by a finite automaton and represented using regular expression.
 
 As we move on to the 1960's where a Ken Thompson who was a computer science pioneer and is also one of the designers of Unix (a multitasking, multiuser computing operating system) would add the concept of matching patterns in a text editor using Stephen Cole Kleene's code and in the 1970's is when we really see regular expressions takeover the programming world, another note is the whole concept became common use with Unix text-processing.
  
@@ -44,10 +44,30 @@ The above example is a piece of code where any data variable wih 'happy morning'
 
 So this all here is all about regular expressions from a brief history of the concept and creation, to it's impact in programming languages, to some examples of it's uses and most important the definition of what is a regular expression.
 
- Q. How do regular expressions differ across implementations?
+ ## How do regular expressions differ across implementations?
 
- A.
+ 
 
- Q. Can all formal languages be encoded as regular expressions?
+ ## Can all formal languages be encoded as regular expressions?
 
- A. 
+When I was talking in the previous question (What is a regular expression?), I made some references to how there are many different programming languages that use regular expression "we see how highley influential this was as we now see the use of regular expressions in so many different programming languages such as Python, C#, Javascript and many more but also regular expressions" and as I continue you will see me dig a bit deeper with my answer to this question but before that let me give you some details about formal languages in the context of regular expressions.
+
+We know we can use regular expression (regex) in languages such as Python and Javascript but if we step out of those languages and use this same approach then can we expect the same results to be produced.
+
+Now most of us like to copy and paste to save time and comfort but can we use this same method across all different programming languages and can all programming languages accept this.
+
+Every regular expression denotes a formal language but a formal language is only regular if there is a regular expression denoting it.
+
+While programming languages are composed of a syntax representing program as strings and characters and is the meaning of the program and on the other hand a formal language are syntaxes without any meaning and is used to study the structure of a set of strings defined formally without attaching meaning to those set of strings.
+
+So as I move on with my answer to this question, can all formal languages be encoded as a regular expression, to break it down easy and simply in layman's terms I will say that most formal languages can be encoded as a regular expression.
+
+This all ties in with the concept of a regular language, a regular language that can be defined by a regular expression
+
+For this question in general if you have more questions about it I suggest you read this document which I found very helpful in discussing this question:
+
+[*Why Aren't Regular Expressions a Lingua Franca?*, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://www.i-programmer.info/programming/perl/13051-can-regular-expressions-be-safely-reused-across-language-boundaries.html#google_vignette/](https://www.i-programmer.info/programming/perl/13051-can-regular-expressions-be-safely-reused-across-language-boundaries.html#google_vignette/)
+
+ ## References for my Project
+
+ Here is a list of references that helped me with the research of my project:
