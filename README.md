@@ -46,7 +46,9 @@ So this all here is all about regular expressions from a brief history of the co
 
  ## How do regular expressions differ across implementations?
 
- 
+To understand the many different ways of implementations of regular expression, you have to understand about what are regular expressions (regex) and how they work which we have already discussed in the previous question as well as an understanding of the regex engine, when you have the knowledge of all this you will then know how to craft a great amount of regular expressions with ease and it may also help with the understanding of why a regular expression may not do as expected or intended to savinga lot of time that may have felt wasted.
+
+Now as we will discuss later in my next question we see that many different formal languages can use regular expression which means we can implement regular expressions in a vast variety of different ways as each language is going to have it's own form of implementation.
 
  ## Can all formal languages be encoded as regular expressions?
 
@@ -78,4 +80,9 @@ For this question in general if you have more questions about it I suggest you r
 
  Here is a list of references that helped me with the research of my project:
 
- 1. [*Why Aren't Regular Expressions a Lingua Franca?*, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf/](https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf/)
+ 1. [*Why Aren't Regular Expressions a Lingua Franca?*, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://medium.com/@davisjam/why-arent-regexes-a-lingua-franca-esecfse19-a36348df3a2/](https://medium.com/@davisjam/why-arent-regexes-a-lingua-franca-esecfse19-a36348df3a2/)
+ 2. [*Mastering Regular Expressions by Jeffrey Friedl,<br> https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124/](https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124/)
+ 3. [*Regular Expressions: Regexes in Python*, Real Python,<br> https://realpython.com/regex-python/](https://realpython.com/regex-python/)
+ 4. [*Teach Yourself Regular Expression in 10 Minutes by Ben Forta,<br> http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf/](http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf//)
+ 5. [Wikipedia,<br> https://en.wikipedia.org/wiki/Regular_expression/](https://en.wikipedia.org/wiki/Regular_expression/)
+ 6. [Python Regular Expression Tutorial,,<br> https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial/](https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial/)
