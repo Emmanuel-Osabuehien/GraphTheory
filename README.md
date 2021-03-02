@@ -48,7 +48,23 @@ So this all here is all about regular expressions from a brief history of the co
 
 To understand the many different ways of implementations of regular expression, you have to understand about what are regular expressions (regex) and how they work which we have already discussed in the previous question as well as an understanding of the regex engine, when you have the knowledge of all this you will then know how to craft a great amount of regular expressions with ease and it may also help with the understanding of why a regular expression may not do as expected or intended to savinga lot of time that may have felt wasted.
 
-Now as we will discuss later in my next question we see that many different formal languages can use regular expression which means we can implement regular expressions in a vast variety of different ways as each language is going to have it's own form of implementation.
+Now as we will discuss later in my next question, we see that many different formal languages can use regular expression which means we can implement regular expressions in a vast variety of different ways as each language is going to have its own form of implementation.
+
+When it comes to implementation in regular expression there are many implementations that differ both just slightly and outstandingly whether in syntax or behaviour but in this case there two types of regular expressions (regex engines) are they are known as regex driven and text driven.
+
+Nowadays, when you come across most modern regular expressions implemented in any language that can encode regular expression, they are more than likely going to be regex driven due to advantage of features associated such as backrefencing (This is when you can identify a previously matched group and look for the exact same text again).
+
+When it comes to regex driven engines (Regexps), regular languages have a lot of structure, a regex driven engine will walk thorugh the regular expression and attempts to match the token in the regex to the next character, if there is match the engine will proceed in the regex and string, if it fails then the engine then backtracks in the regex and string and will continue to try a different path, backtracking is where you try to match as much of the string as you can but if you get stuck you have to go back and try a different way to match it.
+
+But when it comes to text driven engines (regular expressions), the engine will walk through the string instead of the regular expression and attempts to grouping of regular expressions before eventually proceeding to the next character in the string, there is a huge difference compared to regex driven engines as a text driven engine will never backtrackbut at the same time the text driven engine will find the same matches as a regex driven engine would find.
+
+There are three different algorithms that are used to choose whether and how a regex matches a string, one is the tranformation of nondeterministic finite automaton (NFA) to deterministic finite automaton (DFA), the DFA can be constructed and then run on the resulting input string one symbol at a time.
+
+Another algorithm is to duplicate the NFA directly, building each DFA state and getting rid of it after it moves on, the advantages of this is it will keep the DFA indirect and avoids rising construction costs.
+
+The final algortihm is the use of the aforementioned "Backtracking" where you try to match as much of the string as you can but if you get stuck you have to go back and try a different way to match it.
+
+So this all is how regular expression differs across implementation.
 
  ## Can all formal languages be encoded as regular expressions?
 
@@ -58,31 +74,31 @@ We know we can use regular expression (regex) in languages such as Python and Ja
 
 Now most of us like to copy and paste to save time and comfort but can we use this same method across all different programming languages and can all programming languages accept this.
 
-Every regular expression denotes a formal language but a formal language is only regular if there is a regular expression denoting it.
+Every regular expression denotes a formal language, but a formal language is only regular if there is a regular expression denoting it.
 
 While programming languages are composed of a syntax representing program as strings and characters and is the meaning of the program and on the other hand a formal language are syntaxes without any meaning and is used to study the structure of a set of strings defined formally without attaching meaning to those set of strings.
 
-So as I move on with my answer to this question, can all formal languages be encoded as a regular expression, to break it down easy and simply in layman's terms I will say that most formal languages can be encoded as a regular expression.
+So, as I move on with my answer to this question, can all formal languages be encoded as a regular expression, to break it down easy and simply in layman's terms I will say that most formal languages can be encoded as a regular expression.
 
 This all ties in with the concept of a regular language, a regular language that can be defined by a regular expression.
 
 There are many reasons why most formal languages can use regular expressions while some can't, one of the reasons that not all formal languages can be encoded using regular expressions is as simple as not all languages support the same features which means for language such as the aforementioned PERl using this type of code is perfectly fine while in some other languages it may completely unreadable and impossible to debug.
 
-Some languages may use the same syntax for different features and even for the same features but they can also exhibit different behaviour which makes it hard to reuse the regular expressions across different formal languages.
+Some languages may use the same syntax for different features and even for the same features, but they can also exhibit different behaviour which makes it hard to reuse the regular expressions across different formal languages.
 
 So long story short, technically no not all formal languages can be encoded as regular expressions for many reasons while there are a lot of languages that use regular expressio there is also many that don't for many reasons.
 
-For this question in general if you have more questions about it I suggest you read this document which I found very helpful in discussing this question:
+For this question in general if you have more questions about it, I suggest you read this document which I found very helpful in discussing this question:
 
-[*Why Aren't Regular Expressions a Lingua Franca?*, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf/](https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf/)
+[*Why Aren't Regular Expressions a Lingua Franca? *, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf/](https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf/)
 
  ## References
 
  Here is a list of references that helped me with the research of my project:
 
- 1. [*Why Aren't Regular Expressions a Lingua Franca?*, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://medium.com/@davisjam/why-arent-regexes-a-lingua-franca-esecfse19-a36348df3a2/](https://medium.com/@davisjam/why-arent-regexes-a-lingua-franca-esecfse19-a36348df3a2/)
- 2. [*Mastering Regular Expressions by Jeffrey Friedl,<br> https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124/](https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124/)
- 3. [*Regular Expressions: Regexes in Python*, Real Python,<br> https://realpython.com/regex-python/](https://realpython.com/regex-python/)
- 4. [*Teach Yourself Regular Expression in 10 Minutes by Ben Forta,<br> http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf/](http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf//)
+ 1. [Why Aren't Regular Expressions a Lingua Franca?*, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://medium.com/@davisjam/why-arent-regexes-a-lingua-franca-esecfse19-a36348df3a2/](https://medium.com/@davisjam/why-arent-regexes-a-lingua-franca-esecfse19-a36348df3a2/)
+ 2. [Mastering Regular Expressions by Jeffrey Friedl,<br> https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124/](https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124/)
+ 3. [Regular Expressions: Regexes in Python*, Real Python,<br> https://realpython.com/regex-python/](https://realpython.com/regex-python/)
+ 4. [Teach Yourself Regular Expression in 10 Minutes by Ben Forta,<br> http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf/](http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf//)
  5. [Wikipedia,<br> https://en.wikipedia.org/wiki/Regular_expression/](https://en.wikipedia.org/wiki/Regular_expression/)
  6. [Python Regular Expression Tutorial,,<br> https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial/](https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial/)
