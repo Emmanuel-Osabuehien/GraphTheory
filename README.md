@@ -1,7 +1,8 @@
 # Project: Graph Theory 2021
-**Name:** Emmanuel Osabuehien
-**Student ID:** G00373559
-**Module:** Graph Theory
+**Name:** Emmanuel Osabuehien\
+**Student ID:** G00373559\
+**Module:** Graph Theory\
+**Date:** 30/04/2021
 
 ## Description
 
