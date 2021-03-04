@@ -3,6 +3,12 @@
 **Student ID:** G00373559
 **Module:** Graph Theory
 
+## Description
+
+## Instructions
+
+## Explanation
+
 ## What is a regular expression?
 
  Before we get into what is a regular expession in python, the whole concept and development of a regular expression can be dated back to as early as the 1950's and maybe even in the 1940's but in 1951, the concept of regular language was created by a mathematician by the name of Stephen Cole Kleene, where we have a language that can be idenitfied by a finite automaton and represented using regular expression.
