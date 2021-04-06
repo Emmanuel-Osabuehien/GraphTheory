@@ -7,7 +7,7 @@
 """I will be using regular expression wihtin this code"""
 
 findText = []
-with open('examplesText.txt') as find:
+with open('randomtext.txt') as find:
     findText = find.readlines()
 
 count = 0
