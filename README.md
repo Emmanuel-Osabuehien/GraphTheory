@@ -18,6 +18,12 @@ As we move on to the 1960's where a Ken Thompson who was a computer science pion
  
 As we move on to modern day computer science, we see how highley influential this was as we now see the use of regular expressions in so many different programming languages such as Python, C#, Javascript and many more but also regular expressions are used in text editor as well as a use for other tools where we can regulate if a special sequence of characters or string match a specific pattern.
 
+This information I obtained reading books, pdf's and websites such as: 
+
+- [Wikipedia,<br> https://en.wikipedia.org/wiki/Regular_expression](https://en.wikipedia.org/wiki/Regular_expression)
+- [Teach Yourself Regular Expression in 10 Minutes by Ben Forta,<br> http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf](http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf)
+- [Mastering Regular Expressions by Jeffrey Friedl,<br> https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124](https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124), you can purchase this book here but you can also find pdf's online to read through
+
 Now we move on to the main question what is a regular expression, A regular expression or sometimes referred to as a regex can be defined as a unique set or sequence of characters that are used to to match, locate and manage a set of strings.
 
 Here is an example of using regular expression in python for pattern matching:
@@ -49,11 +55,15 @@ $data =~ s/happy morning/good night/i;
 
 The above example is a piece of code where any data variable wih 'happy morning' changes to 'good night', e.g. 'Have a happy morning' changes to 'Have a good night'.
 
+You can find a moe examples of this on websites such as [Google For Education,<br> https://developers.google.com/edu/python/regular-expressions](https://developers.google.com/edu/python/regular-expressions)
+
 So this all here is all about regular expressions from a brief history of the concept and creation, to it's impact in programming languages, to some examples of it's uses and most important the definition of what is a regular expression.
 
  ## How do regular expressions differ across implementations?
 
 To understand the many different ways of implementations of regular expression, you have to understand about what are regular expressions (regex) and how they work which we have already discussed in the previous question as well as an understanding of the regex engine, when you have the knowledge of all this you will then know how to craft a great amount of regular expressions with ease and it may also help with the understanding of why a regular expression may not do as expected or intended to savinga lot of time that may have felt wasted.
+
+Much information can be obtained on regular expressions in relation to implentation from  [*Regular Expression Matching Can Be Simple And Fast*,Russ Cox,<br> https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html)
 
 Now as we will discuss later in my next question, we see that many different formal languages can use regular expression which means we can implement regular expressions in a vast variety of different ways as each language is going to have its own form of implementation.
 
@@ -71,7 +81,11 @@ Another algorithm is to duplicate the NFA directly, building each DFA state and 
 
 The final algortihm is the use of the aforementioned "Backtracking" where you try to match as much of the string as you can but if you get stuck you have to go back and try a different way to match it.
 
+Reading through the "implementation and running times" section on wikipedia is also a good read to gain knowledge on this question, [Wikipedia,<br> https://en.wikipedia.org/wiki/Regular_expression](https://en.wikipedia.org/wiki/Regular_expression/)
+
 So this all is how regular expression differs across implementation.
+
+Search through [Regular Expressions: Regexes in Python*, Real Python,<br> https://realpython.com/regex-python](https://realpython.com/regex-python) if you wish to understand more about regular expressons and it's different forms of implementations.
 
  ## Can all formal languages be encoded as regular expressions?
 
@@ -89,6 +103,11 @@ So, as I move on with my answer to this question, can all formal languages be en
 
 This all ties in with the concept of a regular language, a regular language that can be defined by a regular expression.
 
+For information regarding this topic you can look at sites such as:
+- [Lecture on Formal Languages,<br> http://www.cs.ucc.ie/~dgb/courses/toc/handout7.pdf](http://www.cs.ucc.ie/~dgb/courses/toc/handout7.pdf)
+- [Wikipedia,<br> https://en.wikipedia.org/wiki/Formal_language](https://en.wikipedia.org/wiki/Formal_language)
+- [Wikipedia,<br> https://en.wikipedia.org/wiki/Regular_expression](https://en.wikipedia.org/wiki/Regular_expression)
+
 There are many reasons why most formal languages can use regular expressions while some can't, one of the reasons that not all formal languages can be encoded using regular expressions is as simple as not all languages support the same features which means for language such as the aforementioned PERl using this type of code is perfectly fine while in some other languages it may completely unreadable and impossible to debug.
 
 Some languages may use the same syntax for different features and even for the same features, but they can also exhibit different behaviour which makes it hard to reuse the regular expressions across different formal languages.
@@ -97,15 +116,18 @@ So long story short, technically no not all formal languages can be encoded as r
 
 For this question in general if you have more questions about it, I suggest you read this document which I found very helpful in discussing this question:
 
-[*Why Aren't Regular Expressions a Lingua Franca? *, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf/](https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf/)
+[*Why Aren't Regular Expressions a Lingua Franca? *, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf](https://people.cs.vt.edu/~davisjam/downloads/publications/DavisMichaelCoghlanServantLee-LinguaFranca-ESECFSE19.pdf)
 
  ## References
 
  Here is a list of references that helped me with the research of my project:
 
- 1. [Why Aren't Regular Expressions a Lingua Franca?*, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://medium.com/@davisjam/why-arent-regexes-a-lingua-franca-esecfse19-a36348df3a2/](https://medium.com/@davisjam/why-arent-regexes-a-lingua-franca-esecfse19-a36348df3a2/)
- 2. [Mastering Regular Expressions by Jeffrey Friedl,<br> https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124/](https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124/)
- 3. [Regular Expressions: Regexes in Python*, Real Python,<br> https://realpython.com/regex-python/](https://realpython.com/regex-python/)
- 4. [Teach Yourself Regular Expression in 10 Minutes by Ben Forta,<br> http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf/](http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf//)
- 5. [Wikipedia,<br> https://en.wikipedia.org/wiki/Regular_expression/](https://en.wikipedia.org/wiki/Regular_expression/)
- 6. [Python Regular Expression Tutorial,,<br> https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial/](https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial/)
+ 1. [Why Aren't Regular Expressions a Lingua Franca?*, An Empirical Study on the Re-use and Portability of Regular Expressions,<br> https://medium.com/@davisjam/why-arent-regexes-a-lingua-franca-esecfse19-a36348df3a2](https://medium.com/@davisjam/why-arent-regexes-a-lingua-franca-esecfse19-a36348df3a2)
+ 2. [Mastering Regular Expressions by Jeffrey Friedl,<br> https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124](https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124)
+ 3. [Regular Expressions: Regexes in Python*, Real Python,<br> https://realpython.com/regex-python](https://realpython.com/regex-python/)
+ 4. [Teach Yourself Regular Expression in 10 Minutes by Ben Forta,<br> http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf](http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf)
+ 5. [Wikipedia,<br> https://en.wikipedia.org/wiki/Regular_expression/](https://en.wikipedia.org/wiki/Regular_expression)
+ 6. [Python Regular Expression Tutorial,,<br> https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial](https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial)
+ 7. You can find a moe examples of this on websites such as [Google For Education,<br> https://developers.google.com/edu/python/regular-expressions/](https://developers.google.com/edu/python/regular-expressions)
+ 8. [*Regular Expression Matching Can Be Simple And Fast*,Russ Cox,<br> https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html)
+ 9. [Lecture on Formal Languages,<br> http://www.cs.ucc.ie/~dgb/courses/toc/handout7.pdf](http://www.cs.ucc.ie/~dgb/courses/toc/handout7.pdf)
