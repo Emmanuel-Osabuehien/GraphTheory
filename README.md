@@ -10,6 +10,8 @@
 
 ## Explanation
 
+Here is a link to some of the rough work I used to complete this project: [Github, https://github.com/Emmanuel-Osabuehien/graph-theory-project](https://github.com/Emmanuel-Osabuehien/graph-theory-project)
+
 ## What is a regular expression?
 
  Before we get into what is a regular expession in python, the whole concept and development of a regular expression can be dated back to as early as the 1950's and maybe even in the 1940's but in 1951, the concept of regular language was created by a mathematician by the name of Stephen Cole Kleene, where we have a language that can be idenitfied by a finite automaton and represented using regular expression.
@@ -22,7 +24,7 @@ This information I obtained reading books, pdf's and websites such as:
 
 - [Wikipedia,<br> https://en.wikipedia.org/wiki/Regular_expression](https://en.wikipedia.org/wiki/Regular_expression)
 - [Teach Yourself Regular Expression in 10 Minutes by Ben Forta,<br> http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf](http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf)
-- [Mastering Regular Expressions by Jeffrey Friedl,<br> https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124](https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124), you can purchase this book here but you can also find pdf's online to read through
+- [Mastering Regular Expressions by Jeffrey Friedl,<br> https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124](https://www.amazon.co.uk/Mastering-Regular-Expressions-Jeffrey-Friedl/dp/0596528124) (You can purchase this book here but you can also find pdf's online to read through)
 
 Now we move on to the main question what is a regular expression, A regular expression or sometimes referred to as a regex can be defined as a unique set or sequence of characters that are used to to match, locate and manage a set of strings.
 
@@ -55,7 +57,7 @@ $data =~ s/happy morning/good night/i;
 
 The above example is a piece of code where any data variable wih 'happy morning' changes to 'good night', e.g. 'Have a happy morning' changes to 'Have a good night'.
 
-You can find a moe examples of this on websites such as [Google For Education,<br> https://developers.google.com/edu/python/regular-expressions](https://developers.google.com/edu/python/regular-expressions)
+You can find a moe examples of this on websites such as [(Google For Education, https://developers.google.com/edu/python/regular-expressions)](https://developers.google.com/edu/python/regular-expressions)
 
 So this all here is all about regular expressions from a brief history of the concept and creation, to it's impact in programming languages, to some examples of it's uses and most important the definition of what is a regular expression.
 
@@ -63,7 +65,7 @@ So this all here is all about regular expressions from a brief history of the co
 
 To understand the many different ways of implementations of regular expression, you have to understand about what are regular expressions (regex) and how they work which we have already discussed in the previous question as well as an understanding of the regex engine, when you have the knowledge of all this you will then know how to craft a great amount of regular expressions with ease and it may also help with the understanding of why a regular expression may not do as expected or intended to savinga lot of time that may have felt wasted.
 
-Much information can be obtained on regular expressions in relation to implentation from  [*Regular Expression Matching Can Be Simple And Fast*,Russ Cox,<br> https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html)
+Much information can be obtained on regular expressions in relation to implentation from [(*Regular Expression Matching Can Be Simple And Fast*, Russ Cox, https://swtch.com/~rsc/regexp/regexp1.html)](https://swtch.com/~rsc/regexp/regexp1.html)
 
 Now as we will discuss later in my next question, we see that many different formal languages can use regular expression which means we can implement regular expressions in a vast variety of different ways as each language is going to have its own form of implementation.
 
@@ -81,11 +83,11 @@ Another algorithm is to duplicate the NFA directly, building each DFA state and 
 
 The final algortihm is the use of the aforementioned "Backtracking" where you try to match as much of the string as you can but if you get stuck you have to go back and try a different way to match it.
 
-Reading through the "implementation and running times" section on wikipedia is also a good read to gain knowledge on this question, [Wikipedia,<br> https://en.wikipedia.org/wiki/Regular_expression](https://en.wikipedia.org/wiki/Regular_expression/)
+Reading through the "implementation and running times" section on wikipedia is also a good read to gain knowledge on this question, [(Wikipedia, https://en.wikipedia.org/wiki/Regular_expression)](https://en.wikipedia.org/wiki/Regular_expression/)
 
 So this all is how regular expression differs across implementation.
 
-Search through [Regular Expressions: Regexes in Python*, Real Python,<br> https://realpython.com/regex-python](https://realpython.com/regex-python) if you wish to understand more about regular expressons and it's different forms of implementations.
+Search through [(Regular Expressions: Regexes in Python*, Real Python, https://realpython.com/regex-python)](https://realpython.com/regex-python) if you wish to understand more about regular expressons and it's different forms of implementations.
 
  ## Can all formal languages be encoded as regular expressions?
 
@@ -128,6 +130,7 @@ For this question in general if you have more questions about it, I suggest you 
  4. [Teach Yourself Regular Expression in 10 Minutes by Ben Forta,<br> http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf](http://mygugazabocu.bloggersdelight.dk/sams-teach-yourself-regular-expressions-in-10-minutes-pdf)
  5. [Wikipedia,<br> https://en.wikipedia.org/wiki/Regular_expression/](https://en.wikipedia.org/wiki/Regular_expression)
  6. [Python Regular Expression Tutorial,,<br> https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial](https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial)
- 7. You can find a moe examples of this on websites such as [Google For Education,<br> https://developers.google.com/edu/python/regular-expressions/](https://developers.google.com/edu/python/regular-expressions)
+ 7. [Google For Education,<br> https://developers.google.com/edu/python/regular-expressions/](https://developers.google.com/edu/python/regular-expressions)
  8. [*Regular Expression Matching Can Be Simple And Fast*,Russ Cox,<br> https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html)
  9. [Lecture on Formal Languages,<br> http://www.cs.ucc.ie/~dgb/courses/toc/handout7.pdf](http://www.cs.ucc.ie/~dgb/courses/toc/handout7.pdf)
+ 10. [Github,<br> https://github.com/Emmanuel-Osabuehien/graph-theory-project](https://github.com/Emmanuel-Osabuehien/graph-theory-project)
