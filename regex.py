@@ -63,13 +63,12 @@ def shunt(infix):
     # Return the postfix version of infix.
     return postfix
 
-    if __name__ == "__main__":
-        automatons = [  ["a.(b.b)*.a", ["a", "b", "ab", "abb", "ba", "aaba"]]
-             , ["1.(0.0)*.1", ["100  011", "11011", "01101", "111", "1010"]]
-    ]
-
+if __name__ == "__main__":
+    automatons =[ ["a.(b.b)*.a", ["a", "b", "ab", "abb", "ba", "aaba"]],
+                  ["1.(0.0)*.1", ["100  011", "11011", "01101", "111", "1010"]]
+                ]
+    print("Make Sure This Works")
     for automata in automatons:
-        infix = automatons[0]
-        print(f"infix:   {infix}")
-        print(f"postfix: {shunt(infix)}")
-  
+        infix = automata[0]
+        print("infix:   %s"% infix)
+        print("postfix: %s" % shunt(infix))
