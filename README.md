@@ -6,6 +6,8 @@
 
 ## Description
 
+In regards to my project, my repository should be very simple to follow and easy to follow, I didn't want to make it difficult for an uncommon user to follow but still make it seem quite professional, the contents within my repository.
+
 ## Instructions
 
 ## Explanation

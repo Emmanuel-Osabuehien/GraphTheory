@@ -1,5 +1,5 @@
-Curse
-Lightning
-Madness
-Trifling
-Seven
+111
+000
+101
+101
+110
