@@ -5,6 +5,8 @@
 
 # Imports
 import argparse
+import shunting
+import thompson
 
 """Creating a program that helps you search text files"""
 """I will be using regular expression wihtin this code"""
@@ -12,3 +14,5 @@ import argparse
 # parser = argparse.ArgumentParser()                                               
 # parser.add_argument("--file", "-f", type=str, required=True)
 # args = parser.parse_args()
+
+print("File Works")

@@ -26,15 +26,27 @@ class NFA:
 
     def match(self, s):
         """Return True iff this NFA (instance) matches the string s."""
-        previous = self.start.followes()
+        text = ""
+        words = []
+        
         for c in s:
-            current = set()
-            for state in previous:
-                if state.label == c:
-                    current = (current | state.arrows[0].followes())
-            previous = current
-        return (self.end in previous)
+            if c in ["", "\n"]:
+                text = c + text
+            else: 
+                words.append(text)
+                text = ""
+        words.append(text)
 
+        for i in range(len(words)):
+            previous = self.start.followes()
+            for c in s:
+                current = set()
+                for state in previous: 
+                    if state.label == c:
+                        current = (current | state.arrows[0].follows())
+                previous = current
+        return (self.end in previous)
+            
 def re_to_nfa(postfix):
     stack = []
     for c in postfix:
@@ -88,6 +100,5 @@ def re_to_nfa(postfix):
 
 if __name__ == "__main__":
     for postfix in ["abb.*.a.", "100.*.1.", 'ab|']:
-        print(f"postfix: {postfix}")
-        print(f"nfa:     {re_to_nfa(postfix)}")
-        print()
+        print("postfix: %s" %postfix)
+        print("nfa: %s" %{re_to_nfa(postfix)})
