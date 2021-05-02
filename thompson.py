@@ -1,3 +1,5 @@
+import shunting
+
 class State:
     """A state and its arrows in Thompson's construction."""
     def __init__(self, label, arrows, accept):
@@ -46,7 +48,36 @@ class NFA:
                         current = (current | state.arrows[0].follows())
                 previous = current
         return (self.end in previous)
-            
+
+    def match2(self, s):
+        """ Returns true or false based on the start of line matches the NFA"""
+        i = 0
+        previous = self.start.followes()
+        for c in s:
+            i = i +1
+            current = set()
+            for state in previous:
+                if state.label == c:
+                    current = (current | state.arrows[0].followes())
+                    if self.end in current:
+                        return self.end in current
+            previous = current
+        return (self.end in previous)
+
+    def match3(textfile, infixes):
+        """When a text file and infix has been prompted, 
+        then the function search the text files contents for a match the NFA 
+        and return true or false the contents of the text file"""
+        with open(textfile, 'r') as fileFound:
+            words = fileFound.read()
+            infix = infixes
+            postfix = shunting.shunt(infix)
+            nfa = thompson.re_to_nfa(postfix)
+            for j in words:
+                j = j.strip()
+                match = nfa.match(j)
+                print("Match Function 3 {0} {1}".format((j, match)))
+
 def re_to_nfa(postfix):
     stack = []
     for c in postfix:
@@ -102,3 +133,4 @@ if __name__ == "__main__":
     for postfix in ["abb.*.a.", "100.*.1.", 'ab|']:
         print("postfix: %s" %postfix)
         print("nfa: %s" %{re_to_nfa(postfix)})
+        

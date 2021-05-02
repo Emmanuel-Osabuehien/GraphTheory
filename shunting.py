@@ -1,3 +1,5 @@
+import thompson
+
 def shunt(infix):
     """Convert infix expressions to postfix."""
     postfix = ""
