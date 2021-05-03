@@ -11,8 +11,10 @@ import thompson
 """Creating a program that helps you search text files"""
 """I will be using regular expression wihtin this code"""
 
-# parser = argparse.ArgumentParser()                                               
-# parser.add_argument("--file", "-f", type=str, required=True)
-# args = parser.parse_args()
+def main(args):
+    _args = get_main_args(args)
+    if _args_regex:
+        rfex[_args.textfile[0], _args.infix[0]]
+        print("{0} {1}".format(_args.infix[0], _args.textfile[0]))
 
 print("File Works")
