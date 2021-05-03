@@ -1,0 +1,10 @@
+Match: False Infix: (a.(b|c))* String: abba
+Match: True Infix: (a.(b|c))* String: ab
+Match: False Infix: (a.(b|c))* String: acc
+Match: False Infix: (a.(b|c))* String: abbc
+Match: False Infix: (a.(b|c))* String: accb
+Match: False Infix: (a.(b|c))* String: caba
+Match: False Infix: (a.(b|c))* String: abbbc
+Match: False Infix: (a.(b|c))* String: abcb
+Match: False Infix: (a.(b|c))* String: bac
+Match: False Infix: (a.(b|c))* String: cab

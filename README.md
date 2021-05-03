@@ -8,7 +8,50 @@
 
 In regards to my project, my repository should be very simple to follow and easy to follow, I didn't want to make it difficult for an uncommon user to follow but still make it seem quite professional, the contents within my repository.
 
+My project searches text files using regular expressions, it is written in the Python 3 programming language, the concept is to match any string of text matches a regular expression which will be compared using an Non-Definite Automaton also known as an NFA for short which involes operations for regular expressions, e.g. Concatanate, this code is coded from scratch and will not use external libraries such as re package.
+
 ## Instructions
+
+My program isn't too complex in the way it is presented or coded, it should be simple to follow how to get this up and running.
+
+Before attempting to test my program make sure git is installed on your selected device.
+
+- First you should navigate to my github repository (https://github.com/Emmanuel-Osabuehien/project-graph-theory)
+- You should then clone/download my repository to your local machine
+- Open a command line or terminal whichever you prefer
+- Enter a location that you wish to perform this test before cloning your repostiory, e.g. mkdir project, cd project
+- Clone the repository into your command line or terminal by typing "git clone https://github.com/Emmanuel-Osabuehien/project-graph-theory"
+- The contents of the repository should then be imported onto your local machine 
+- Assuming everything needed to run this program correctly is installed (Git, Python, Anaconda), you can then run the program by typing "Python regex.py" or "Python3 regex.py" which ever one suits you
+
+You will then be presented with a list of infixes and match function like so:
+
+infix:   a.(b.b)*.a
+postfix: abb.*.a.
+nfa:  {<__main__.NFA object at 0x7f8b58008eb8>}
+The String Passes True Or False: True
+The String Passes True Or False: False
+The String Passes True Or False: False
+The String Passes True Or False: False
+The String Passes True Or False: False
+The String Passes True Or False: False
+The String Passes True Or False: False
+The String Passes True Or False: False
+The String Passes True Or False: False
+The String Passes True Or False: False
+infix:   a.b
+postfix: ab.
+
+You should also be presented with a sort of main menu where you can interact with the program by:
+
+1. Reading a text file which contains and infix and comparing that infix with strings from another text file.
+2. Printing out the results from the above function to a seperate text file
+
+The file and infix should be entered in manually and for exmaple something like this should be printed when passed:
+
+Match: True, Infix: a+b.c, String: abc
+
+3. You can then choose to exit the program if you wish
 
 ## Explanation
 
