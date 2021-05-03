@@ -55,6 +55,40 @@ Match: True, Infix: a+b.c, String: abc
 
 ## Explanation
 
+The Shunting Yard Alogrithm was the whole basis for my program, the Shunting Yard Alogrithm was created by computer scientist Edsger Dijkstra, a fun fact is the algorithm is actually named after a railroad shunting yard due to the operations resemblence.
+The algorithm was invented with the use of parsing mathematical expressions in infix notation and in turn can produce a postfix notation, as we see later when using the algorithm for our program, the algorithm is stack-based and the alogrithm can also be used to convert string variables (input and output).
+
+Most people use Infix expressions (this is a single letter or operator which is preceded by an infix string and another infix string) as a form of mathematical notation, an example of this is: (3 + 4)
+
+1. Input: 3 + 4
+2. Push 3 to the output queue (whenever a number is read it is pushed to the output)
+3. Push + (or its ID) onto the operator stack
+4. Push 4 to the output queue
+5. After reading the expression, pop the operators off the stack and add them to the output.
+In this case there is only one, "+".
+6. Output: 3 4 +
+
+Look at [Brilliant.Org,<br> https://brilliant.org/wiki/shunting-yard-algorithm](https://brilliant.org/wiki/shunting-yard-algorithm) and [Wikipedia,<br> https://en.wikipedia.org/wiki/Shunting-yard_algorithm](https://en.wikipedia.org/wiki/Shunting-yard_algorithm)
+
+Now a closer look in my project specfically, lets take a deep dive into how I implmented this algorithm into my program:
+
+- The program requests the user to enter a condition for the NFA.
+- The program then determines whther the condition is infix or postfix based the string constaining brackets/notation
+- If the string contains a bracket the program will convert the string to postfix notation.
+- We then create and set an Operatror Precedence which itself contains the order of precedence each special character is taken into.
+- The Operator Precendence contains the Kleane star (*), the Concatination notation (.) and the OR operator (|).
+- Two runes are Created a postfix rune and a rune labeled s, These will be used as stacks to add and remove from.
+- We then loop thorugh the infix with just one character at a time.
+- If the current charcater is an opening bracket, then the character is added to the stack (s)
+- But if the current character is a closing bracket, then it continues popping from s stack until an opening bracket is recieved, it will then append the top of the s stack to the postfix until opening bracket is found and the stack is the same as the previous s stack with just one one less item
+- If the current character is equal to one of the characters in the operator precedence then it is then added to the top of the s stack to the postfix stack with all elements which in turn removes the last item and adds the current characters to the s stack
+- If the current character does not fit one of the previous conditions, append to the postfix stack
+- If the length of the s stack  is larger than, then the last item of the s stack is then added to postifx stack and all characters from s stack except char is added to postfix stack and the loop will continue until s stack is empty
+- Postfix is then returned to a string.
+- A boolean variable will be returned to tell if the string was a match or not.
+
+After this, I use Thompson's Construction to build an NFA Algorithm which creates an NFA stack and will help convert my regular expression into a NFA object and there I then create my different functions to read files, print outputs, match strings and compare to NFA.
+
 Here is a link to some of the rough work I used to complete this project: [Github, https://github.com/Emmanuel-Osabuehien/graph-theory-project](https://github.com/Emmanuel-Osabuehien/graph-theory-project)
 
 ## What is a regular expression?
